@@ -1,0 +1,210 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+  /* font-family: ; */
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--global-color);
+}
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  width: fit-content;
+  margin: 1.5rem 0;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-group input {
+  background-color: var(--secondary-color);
+  border-radius: 0.7rem;
+  border-style: none;
+  height: 2.8rem;
+  color: var(--global-color);
+}
+
+.btn {
+  background-color: var(--btn-color);
+  border-radius: 0.5rem;
+  border-style: none;
+  height: 2.8rem;
+  width: 100%;
+  box-shadow: 0rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: rgb(39 89 94);
+  color: var(--global-color);
+}
+
+.fgt a {
+  text-decoration: none;
+  color: var(--btn-color);
+  text-align: end;
+}
+
+.form-group label {
+  position: relative;
+  bottom: 2.3rem;
+  padding: 0px 12px;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+  color: var(--global-color);
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+  transform: translateY(-2.2rem);
+  color: var(--global-color);
+}
+
+.fgt input[type="checkbox"] {
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .img {
+  width: 100%;
+  height: 15rem;
+  background-image: url(images/wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1230px) and (min-width: 1100px) {
+  .footer .img {
+    height: 13rem;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 1020px) {
+  .footer .img {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 1020px) and (min-width: 830px) {
+  .footer .img {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 830px) and (min-width: 670px) {
+  .footer .img {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 670px) and (min-width: 500px) {
+  .footer .img {
+    height: 6rem;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 425px) {
+  .footer .img {
+    height: 5rem;
+  }
+}
+@media (max-width: 500px) and (min-width: 425px) {
+  .footer .img {
+    height: 4rem;
+  }
+}
+@media (max-width: 425px) and (min-width: 200px) {
+  .footer .img {
+    height: 3.5rem;
+  }
+}
+
+#icon {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#icon-label {
+  position: absolute;
+  left: 100px;
+  bottom: 60px;
+}
+
+:root {
+  --primary-color: #093545;
+  --secondary-color: rgb(34 73 87);
+  --btn-color: rgb(32 223 127);
+  --global-color: #fff;
+}
+
+.light-theme {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgba(32, 223, 128, 0.773);
+  --btn-color: rgb(34 73 87);
+  --global-color: #093545;
+}
+
+.forgot-pw {
+  color: inherit;
+}
+
+#forgot-pw {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 1;
+  background: #fff;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+#forgot-pw:target {
+  height: 100%;
+  opacity: 1;
+  background: var(--primary-color) no-repeat center;
+  background-size: cover;
+}
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: inherit;
+}
